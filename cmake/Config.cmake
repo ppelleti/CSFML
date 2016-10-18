@@ -28,7 +28,7 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
         return()
     endif()
 else()
-    message(FATAL_ERROR "Unsupported operating system")
+    message(FATAL_ERROR "Unsupported operating system: ${CMAKE_SYSTEM_NAME}")
     return()
 endif()
 
